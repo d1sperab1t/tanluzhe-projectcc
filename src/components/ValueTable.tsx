@@ -74,7 +74,7 @@ export default function ValueTable() {
       <div ref={ref} className="value-table-grid" style={{ padding: '0 max(3vw, 48px)', display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 48 }}>
 
         {/* Left: table */}
-        <div>
+        <div className="value-table-inner">
           <div style={{
             display: 'flex', justifyContent: 'space-between',
             padding: '10px 0', marginBottom: 8,
@@ -113,7 +113,8 @@ export default function ValueTable() {
           initial={{ opacity: 0, y: 40 }}
           animate={inView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.75, delay: 0.2, ease: [0.22, 1, 0.36, 1] }}
-          style={{ display: 'flex', flexDirection: 'column', gap: 24 }}
+          className="value-price-col"
+          style={{ display: 'flex', flexDirection: 'column', gap: 24, minHeight: 640 }}
         >
           {/* Price callout */}
           <div style={{
@@ -143,11 +144,11 @@ export default function ValueTable() {
           </div>
 
           {/* Night race photo */}
-          <div style={{ position: 'relative', height: 240, overflow: 'hidden' }}>
+          <div style={{ position: 'relative', flex: 1, minHeight: 240, overflow: 'hidden' }}>
             <img
               src="/sucai/race3.jpg"
               alt="Night race"
-              style={{ width: '100%', height: '100%', objectFit: 'cover', objectPosition: 'center' }}
+              style={{ width: '100%', height: '100%', objectFit: 'cover', objectPosition: 'center 30%' }}
             />
             <div style={{
               position: 'absolute', inset: 0,

@@ -69,10 +69,13 @@ body {
   .benefits-cards-grid { grid-template-columns: 1fr !important; padding: 0 20px !important; }
 
   /* ValueTable section */
-  .value-table-grid { grid-template-columns: 1fr !important; gap: 24px !important; padding: 0 20px !important; }
+  .value-table-grid { grid-template-columns: 1fr !important; gap: 0 !important; padding: 0 !important; }
+  .value-table-inner { padding: 0 20px 24px !important; }
+  .value-price-col { gap: 0 !important; }
 
   /* CTA section */
   .cta-inner { padding: 48px 20px !important; }
+  .cta-brand-line { letter-spacing: 0.12em !important; font-size: 10px !important; }
   .cta-price-row { gap: 16px !important; }
 
   /* Footer */

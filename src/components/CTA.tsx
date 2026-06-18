@@ -90,14 +90,15 @@ export default function CTA() {
             initial={{ opacity: 0, y: 20 }}
             animate={heroInView ? { opacity: 1, y: 0 } : {}}
             transition={{ duration: 0.6, delay: 0.2 }}
+            className="cta-brand-line"
             style={{
               fontSize: 11, letterSpacing: '0.3em', color: 'rgba(255,255,255,0.5)',
               textTransform: 'uppercase', marginBottom: 24,
-              display: 'flex', alignItems: 'center', gap: 14,
+              textAlign: 'center',
+              whiteSpace: 'nowrap',
             }}
           >
-            <span style={{ display: 'block', width: 28, height: 2, background: 'var(--accent)' }} />
-            莫干山户外运动协会 × 山野梦想家 × DEEPBEAT
+            莫干山户外运动协会 × 山野梦想家 × DEEPBEAT<span style={{ fontFamily: 'var(--serif)', fontWeight: 400, letterSpacing: '0.12em', textTransform: 'none' }}>记路家</span>
           </motion.div>
 
           <motion.h2
