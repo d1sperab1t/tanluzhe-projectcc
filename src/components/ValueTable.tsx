@@ -6,7 +6,7 @@ const rows = [
   { label: '探路者专属大礼包', value: '¥1,500' },
   { label: '专业运动恢复理疗', value: '¥3,000/次' },
   { label: '晚安双重恢复礼', value: '¥500' },
-  { label: '8条短视频拍摄剪辑', value: '¥9,800' },
+  { label: '6条短视频拍摄剪辑', value: '¥9,800' },
   { label: '山野视觉教学课程', value: '¥1,980' },
   { label: '高山氧运动健康体验', value: '专属资源' },
   { label: '官方投流资金补贴', value: '平台承担' },
